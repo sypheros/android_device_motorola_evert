@@ -19,11 +19,16 @@ vendor/etc/qdcm_calib_data_mipi_mot_vid_auo_1080p_593.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_tianma_1080p_593.xml
 vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_1080p_593.xml
 
+# Lost files
+vendor/lib/libchromatix_mot_ov8856_postproc.so
+vendor/lib/hw/android.hardware.camera.provider@2.4-impl.so
+vendor/lib64/hw/android.hardware.camera.provider@2.4-impl.so
+
 # Camera
-etc/zaf/zaf_mot_s5k2l7sa.json:vendor/etc/zaf/zaf_mot_s5k2l7sa.json
-etc/zaf/zaf_imx386.json:vendor/etc/zaf/zaf_imx386.json
-etc/zaf/zaf_imx386_mono.json:vendor/etc/zaf/zaf_imx386_mono.json
-lib/hw/libSonyDefocus.so:vendor/lib/hw/libSonyDefocus.so
+etc/zaf/zaf_mot_s5k2l7sa.json
+etc/zaf/zaf_imx386.json
+etc/zaf/zaf_imx386_mono.json
+lib/hw/libSonyDefocus.so
 vendor/lib/hw/camera.sdm660.so
 vendor/lib/libhal_dbg.so
 vendor/lib/libactuator_mot_ak7371.so
@@ -368,16 +373,20 @@ vendor/lib64/libmmcamera_tintless_bg_pca_algo.so
 
 # Camera - Postprocessing
 vendor/lib/libdualcameraddm.so
-lib64/libjni_pacprocessor.so:vendor/lib64/libjni_pacprocessor.so
+vendor/lib64/libjni_pacprocessor.so
 vendor/lib64/libdualcameraddm.so
 vendor/lib/libS5k2l7Pdaf.so
 vendor/lib/libS5k2l7PdafCamif.so
 vendor/lib/libmm-qcamera.so
-lib/libcamera_metadata.so:vendor/lib/libcamera_metadata.so
-lib64/libcamera_metadata.so:vendor/lib64/libcamera_metadata.so
+vendor/lib/libcamera_metadata.so
+vendor/lib64/libcamera_metadata.so
 
 # Cam from P
 vendor/lib/libmot_gpu_mapper.so
+vendor/lib/libgui_vendor.so|2289516454cceae50bb3963f9255bc113a24b508
+lib/libbufferhubqueue.so:vendor/lib/libbufferhubqueue.so
+lib/libpdx_default_transport.so:vendor/lib/libpdx_default_transport.so
+lib64/libbufferhubqueue.so:vendor/lib64/libbufferhubqueue.so
 vendor/lib/libgui_vendor.so
 
 # Camera - Firmware
@@ -398,7 +407,7 @@ vendor/bin/qseecomd
 vendor/lib/libcppf.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libQSEEComAPI.so
-vendor/lib/libsdedrm.so
+vendor/lib/libsdedrm.so|14659302ccd3df6929debd931a1a7258739ca144
 vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -414,6 +423,18 @@ vendor/lib64/libssd.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-fpcservice
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
+
+# Firmware
+vendor/firmware/focaltech-auo-ft5x46-03-0001-evert.bin
+vendor/firmware/focaltech-djn-ft5x46-15-0001-evert.bin
+vendor/firmware/goodix-auo-gt9xx-600a-0001-evert.bin
+vendor/firmware/goodix-tianma-gt9xx-6009-0001-evert.bin
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+vendor/firmware/marley-dsp1-ultrasound.wmfw
+vendor/firmware/marley-dsp2-aov-frontend.wmfw
+vendor/firmware/marley-dsp2-aov-vrgain.bin
+vendor/firmware/marley-dsp3-aov-control.wmfw
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
@@ -440,3 +461,105 @@ vendor/lib64/libpn553_fw.so
 
 # Thermal
 etc/thermal-engine-evert.conf:vendor/etc/thermal-engine.conf
+
+# Media
+vendor/lib/libmmsw_detail_enhancement.so
+vendor/lib/libmmsw_detail_enhancement.so
+vendor/lib/libmmsw_math.so
+vendor/lib/libmmsw_opencl.so
+vendor/lib/libmmsw_platform.so
+vendor/lib64/libmmosal_proprietary.so
+vendor/lib64/libmmsw_detail_enhancement.so
+vendor/lib64/libmmsw_math.so
+vendor/lib64/libmmsw_opencl.so
+vendor/lib64/libmmsw_platform.so
+vendor/lib/libaudioroute.so
+
+# fm
+vendor/lib64/ftm_fm_lib.so
+vendor/lib/ftm_fm_lib.so
+framework/qcom.fmradio.jar
+lib/libqcomfm_jni.so
+lib64/libqcomfm_jni.so
+
+# Audio
+vendor/lib/hw/android.hardware.audio@2.0-impl.so
+vendor/lib/hw/android.hardware.audio.effect@2.0-impl.so
+vendor/lib/hw/audio.motvr.default.so
+vendor/lib/hw/motorola.hardware.audio@2.0-impl.so
+lib/hw/audio.a2dp.default.so
+vendor/lib/motorola.hardware.audio.adspd@1.0-impl.so
+vendor/lib/motorola.hardware.audio@2.0_vendor.so
+vendor/lib/motorola.hardware.audio.common@2.0_vendor.so
+vendor/lib/libaudioparsers.so
+vendor/lib/libmotaudioutils.so
+vendor/lib/motorola.hardware.audio.eqservice@1.0_vendor.so
+lib/motorola.hardware.audio.adspd@1.0_vendor.so
+lib/motorola.hardware.audio.adspd@1.0.so
+lib/libmotaudiohal@2.0.so
+lib/libaaudioservice.so
+lib/libaaudio.so
+lib/libaudiohal_deathhandler.so
+lib/android.hardware.audio.common-util.so
+lib/libaudiomanager.so
+lib/motorola.hardware.audio.eqservice@1.0.so
+lib/motorola.hardware.audio.common@2.0.so
+lib/libaudiopolicymanager.so
+lib/motorola.hardware.audio@2.0.so
+lib/libaudiohal@4.0.so
+lib/libaudiospdif.so
+lib/libaudiopolicymanagerdefault.so
+lib/android.hardware.audio.effect@2.0.so
+lib/android.hardware.audio@2.0.so
+lib/libaudiopolicyenginedefault.so
+lib/motorola.hardware.audio.adspd@1.0.so
+lib/libaudioutils.so
+lib/libaudio-resampler.so
+lib/android.hardware.audio.common@4.0.so
+lib/android.hardware.audio.common@2.0.so
+lib/libaudioclient.so
+lib/libaudiohal@2.0.so
+lib/libaudioflinger.so
+lib/libaudioeffect_jni.so
+lib/libaudiopolicyservice.so
+lib/android.hardware.audio.common@4.0-util.so
+lib/libaudiohal.so
+lib/libaudioprocessing.so
+lib/android.hardware.audio.common@2.0-util.so
+lib/android.hardware.audio@4.0.so
+lib/android.hardware.audio.effect@4.0.so
+lib64/hw/audio.a2dp.default.so
+vendor/lib64/motorola.hardware.audio.adspd@1.0-impl.so
+vendor/lib64/libaudioparsers.so
+vendor/lib64/motorola.hardware.audio.adspd@1.0.so
+lib64/libaudiopolicyservice.so
+lib64/android.hardware.audio.common@4.0-util.so
+lib64/libaudiohal.so
+lib64/libaudioprocessing.so
+lib64/android.hardware.audio.common@2.0-util.so
+lib64/android.hardware.audio@4.0.so
+lib64/android.hardware.audio.effect@4.0.so
+lib64/libmotaudiohal@2.0.so
+lib64/libaaudio.so
+lib64/libaudiohal_deathhandler.so
+lib64/android.hardware.audio.common-util.so
+lib64/libaudiomanager.so
+lib64/motorola.hardware.audio.eqservice@1.0.so
+lib64/motorola.hardware.audio.common@2.0.so
+lib64/libaudiopolicymanager.so
+lib64/motorola.hardware.audio@2.0.so
+lib64/libaudiohal@4.0.so
+lib64/libaudiospdif.so
+lib64/libaudiopolicymanagerdefault.so
+lib64/android.hardware.audio.effect@2.0.so
+lib64/android.hardware.audio@2.0.so
+lib64/libaudiopolicyenginedefault.so
+lib64/motorola.hardware.audio.adspd@1.0.so
+lib64/libaudioutils.so
+lib64/libaudio-resampler.so
+lib64/android.hardware.audio.common@4.0.so
+lib64/android.hardware.audio.common@2.0.so
+lib64/libaudioclient.so
+lib64/libaudiohal@2.0.so
+lib64/libaudioflinger.so
+lib64/libaudioeffect_jni.so
