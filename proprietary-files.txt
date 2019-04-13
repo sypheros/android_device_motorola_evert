@@ -563,3 +563,10 @@ lib64/libaudioclient.so
 lib64/libaudiohal@2.0.so
 lib64/libaudioflinger.so
 lib64/libaudioeffect_jni.so
+
+# Motorola
+vendor/lib/com.motorola.hardware.display.panel@1.0.so
+vendor/lib/motorola.hardware.audio.adspd@1.0.so
+vendor/lib/hw/com.motorola.hardware.display.panel@1.0-impl.so
+vendor/lib64/com.motorola.hardware.display.panel@1.0.so
+vendor/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so
