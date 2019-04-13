@@ -460,7 +460,7 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib64/libpn553_fw.so
 
 # Thermal
-etc/thermal-engine-evert.conf:vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-evert.conf:vendor/etc/thermal-engine.conf
 
 # Media
 vendor/lib/libmmsw_detail_enhancement.so
