@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_evert.mk
+    $(LOCAL_DIR)/lineage_evert.mk \
+    $(LOCAL_DIR)/havoc_evert.mk
