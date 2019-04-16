@@ -68,7 +68,7 @@ endif
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := lineage_evert
+PRODUCT_NAME := havoc_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola
