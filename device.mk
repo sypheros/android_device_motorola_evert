@@ -23,8 +23,8 @@ $(call inherit-product-if-exists, vendor/motorola/evert/evert-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+#PRODUCT_ENFORCE_RRO_TARGETS := \
+#    framework-res
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal

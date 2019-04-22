@@ -21,7 +21,7 @@ set -e
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "$MY_DIR" ]]; then MY_DIR="$PWD"; fi
 
-LINEAGE_ROOT="$MY_DIR"/../../..
+AOSP_ROOT="$MY_DIR"/../../..
 
 export DEVICE=evert
 export DEVICE_COMMON=sdm660-common
@@ -31,7 +31,7 @@ export DEVICE_BRINGUP_YEAR=2018
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
 
-BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
+BLOB_ROOT="$AOSP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
 # Load libSonyDefocus from vendor
 CAMERA_IMX386="$BLOB_ROOT"/vendor/lib/libmmcamera_imx386.so
