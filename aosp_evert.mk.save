@@ -25,7 +25,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/motorola/evert/device.mk)
 
 # Boot animation
-TARGET_BOOT_ANIMATION_RES := 2140
+#TARGET_BOOT_ANIMATION_RES := 2140
 
 # A/B updater
 AB_OTA_UPDATER := true
@@ -83,12 +83,16 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := motorola/evert_retail/evert:9/PPWS29.116-11-2/00cb:user/release-keys
 
 # Build with GApps if GAPPS_BUILD is true
-#ifeq ($(GAPPS_BUILD),true) 
-WITH_GAPPS := true 
-TARGET_GAPPS_ARCH := arm64 
-IS_PHONE := true 
-TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-#endif
-# Use Gcam and Jelly 
-#TARGET_USE_GCAM := true
+ifeq ($(GAPPS_BUILD),true) WITH_GAPPS := true 
+    TARGET_GAPPS_ARCH := arm64 IS_PHONE := true 
+    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
+# Use Gcam and Jelly TARGET_USE_GCAM := true
+TARGET_USE_JELLY := true# Build with GApps if 
+GAPPS_BUILD is true ifeq ($(GAPPS_BUILD),true)
+    WITH_GAPPS := true TARGET_GAPPS_ARCH := arm64 
+    IS_PHONE := true 
+    TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
+# Use Gcam and Jelly TARGET_USE_GCAM := true
 TARGET_USE_JELLY := true
