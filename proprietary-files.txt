@@ -598,3 +598,7 @@ vendor/lib64/com.motorola.hardware.display.panel@1.0.so
 vendor/lib64/hw/com.motorola.hardware.display.panel@1.0-impl.so
 vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
 vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
+
+# libvideoutils
+vendor/lib/libvideoutils.so
+vendor/lib64/libvideoutils.so
