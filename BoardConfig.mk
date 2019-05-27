@@ -25,6 +25,8 @@ TARGET_OTA_ASSERT_DEVICE := evert
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
+# Gapss
+GAPPS_BUILD := true
 # Kernel
 TARGET_KERNEL_CONFIG := lineageos_evert_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8998

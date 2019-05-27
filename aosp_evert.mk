@@ -82,13 +82,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := motorola/evert_retail/evert:9/PPWS29.116-11-2/00cb:user/release-keys
 
-# Build with GApps if GAPPS_BUILD is true
-#ifeq ($(GAPPS_BUILD),true) 
-WITH_GAPPS := true 
-TARGET_GAPPS_ARCH := arm64 
-IS_PHONE := true 
-TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
-#endif
-# Use Gcam and Jelly 
-#TARGET_USE_GCAM := true
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+# Use Gcam and Jelly
+TARGET_USE_GCAM := true
 TARGET_USE_JELLY := true
