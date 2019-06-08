@@ -410,9 +410,9 @@ vendor/lib/libmm-qcamera.so
 # Cam from P
 vendor/lib/libmot_gpu_mapper.so
 vendor/lib/libgui_vendor.so|2289516454cceae50bb3963f9255bc113a24b508
-lib/libbufferhubqueue.so:vendor/lib/libbufferhubqueue.so
-lib/libpdx_default_transport.so:vendor/lib/libpdx_default_transport.so
-lib64/libbufferhubqueue.so:vendor/lib64/libbufferhubqueue.so
+lib/libbufferhubqueue.so
+lib/libpdx_default_transport.so
+lib64/libbufferhubqueue.so
 vendor/lib/libgui_vendor.so
 
 # Camera - Firmware
