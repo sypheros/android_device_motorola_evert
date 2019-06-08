@@ -604,16 +604,8 @@ vendor/lib/libvideoutils.so
 vendor/lib64/libvideoutils.so
 
 # Graphics from stock
-vendor/lib/vendor.display.config@1.3.so
-vendor/lib/vendor.display.color@1.2.so
-vendor/lib/vendor.display.config@1.4.so
-vendor/lib64/vendor.display.config@1.2.so
-vendor/lib/vendor.display.config@1.2.so
 vendor/lib/hw/displaypanel.default.so
 vendor/lib64/hw/displaypanel.default.so
-vendor/lib64/vendor.display.config@1.3.so
-vendor/lib64/vendor.display.color@1.2.so
-vendor/lib64/vendor.display.config@1.4.so
 vendor/etc/init/com.motorola.hardware.display.panel@1.0-service.rc
 vendor/bin/hw/com.motorola.hardware.display.panel@1.0-service
 
