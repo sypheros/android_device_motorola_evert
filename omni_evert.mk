@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2017 The LineageOS Open Source Project
+# Copyright (C) 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,14 +11,27 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+#
+# This file is the build configuration for a full Android
+# build for grouper hardware. This cleanly combines a set of
+# device-specific aspects (drivers) with a device-agnostic
+# product configuration (apps).
 #
 
-# Inherit some common Havoc stuff.
+# Inherit some common stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, vendor/havoc/config/common.mk)
+# Inherit from our custom product configuration
+$(call inherit-product, vendor/omni/config/common.mk)
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# Get the prebuilt list of APNs
+$(call inherit-product, vendor/omni/config/gsm.mk)
+
+# Bootanimation
+TARGET_BOOTANIMATION_SIZE := 1080p
 
 # Device
 $(call inherit-product, device/motorola/evert/device.mk)
@@ -51,10 +63,10 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    bootctrl.sdm660
+    bootctrl.qcom
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.sdm660 \
+    bootctrl.qcom \
     libcutils \
     libgptutils \
     libz
@@ -68,7 +80,7 @@ endif
 
 # Device identifiers
 PRODUCT_DEVICE := evert
-PRODUCT_NAME := havoc_evert
+PRODUCT_NAME := omni_evert
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := Moto G6 Plus
 PRODUCT_MANUFACTURER := Motorola
@@ -78,10 +90,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert
 
 BUILD_FINGERPRINT := motorola/evert_retail/evert:9/PPWS29.116-11-2/00cb:user/release-keys
-
-# Official
-export export HAVOC_BUILD_TYPE=Official
-
-#device maintainer
-PRODUCT_PROPERTY_OVERRIDES += \
- 	ro.havoc.maintainer=fJSanti

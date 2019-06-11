@@ -15,5 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_evert.mk \
-    $(LOCAL_DIR)/aicp_evert.mk
+    $(LOCAL_DIR)/device.mk \
+    $(LOCAL_DIR)/omni_evert.mk
