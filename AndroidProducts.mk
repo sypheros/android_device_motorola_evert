@@ -16,4 +16,5 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/havoc_evert.mk \
+    $(LOCAL_DIR)/liquid.mk \
     $(LOCAL_DIR)/aicp_evert.mk
